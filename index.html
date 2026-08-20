@@ -418,15 +418,20 @@ section{
   padding:40px 25px;
   text-align:center;
 }
-.family h3{
-  font-size:38px;
-  font-weight:500;
-  margin:8px 0 20px;
+.family h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 500;
+    margin: 8px 0 10px;
 }
-.family p{
-  color:var(--muted);
-  line-height:2;
-  font-size:13px;
+
+.family p {
+    color: var(--muted);
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
 }
 /* =========================
    GALLERY
@@ -883,11 +888,13 @@ footer{
         Gawtam Krishna
       </h3>
       <p>
-        Dileep P · Father
+        <div class="family">
+    <p class="family-label">SON OF</p>
+    <h3>Dileep P & Raji Dileep</h3>
+</div>
+      
         <br>
-        Raji Dileep · Mother
-        <br>
-        Gowrinandhan · Brother
+        Brother of Gowrinandan
       </p>
     </div>
     <div class="family reveal">
@@ -900,7 +907,7 @@ footer{
       <p>
         Sunil P · Father
         <br>
-        Blaizy Sunil · Mother
+        Blaizy George · Mother
         <br>
         Sangeetha Sunil · Sister
       </p>
