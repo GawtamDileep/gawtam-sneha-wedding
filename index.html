@@ -440,28 +440,22 @@ section{
    GALLERY
 ========================= */
 .gallery-grid {
-    display: flex;
-  flex-direction:columns;
-    flex-wrap: nowrap;
-    gap: 12px;
-  margin-top:45px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; /* Makes images snap smoothly into view */
-    -webkit-overflow-scrolling: touch; /* Smooth momentum scroll on iOS */
-    padding-bottom: 10px; /* Space for scrollbar */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+    margin-top: 45px !important;
+    overflow: visible !important;
 }
 .photo {
-    flex: 0 0 80%; /* Sets width: shows 1 full photo + hint of the next */
-  min-width:80%;
-  max-width:80%;
-  width:80%;
-    scroll-snap-align: start;
-    aspect-ratio: 1 / 1;
-  height:auto;
-    overflow: hidden;
-  cursor:pointer;
-  background: #e5d6c2;
-    border-radius: 8px; /* Optional rounded corners */
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+    aspect-ratio: 1 / 1 !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    background: #e5d6c2 !important;
+    border-radius: 8px !important;
 }
 
 .photo img {
@@ -683,9 +677,11 @@ footer{
   .family-grid{
     grid-template-columns:1fr;
   }
-  .gallery-grid{
-    gap:8px;
-  }
+ .gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+}
   .photo{
     flex:0 0 85%;
   }
