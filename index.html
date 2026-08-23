@@ -441,8 +441,10 @@ section{
 ========================= */
 .gallery-grid {
     display: flex;
+  flex-direction:row;
     flex-wrap: nowrap;
     gap: 12px;
+  margin-top:45px;
     overflow-x: auto;
     scroll-snap-type: x mandatory; /* Makes images snap smoothly into view */
     -webkit-overflow-scrolling: touch; /* Smooth momentum scroll on iOS */
@@ -450,9 +452,12 @@ section{
 }
 .photo {
     flex: 0 0 80%; /* Sets width: shows 1 full photo + hint of the next */
+  min-width:80%;
     scroll-snap-align: start;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+  cursor:pointer;
+  background: #e5d6c2;
     border-radius: 8px; /* Optional rounded corners */
 }
 
